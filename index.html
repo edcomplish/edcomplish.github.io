@@ -3,9 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Venture Lab | A full-semester high school entrepreneurship course</title>
+<title>Venture Lab by Edcomplish | High school entrepreneurship course</title>
 <meta name="description" content="Venture Lab is a ready-to-teach, 90-day high school entrepreneurship course: daily slides, teacher guides, assessments and a semester-long Venture Project. Licensed per building by Edcomplish.">
 <meta property="og:title" content="Venture Lab, an Edcomplish course">
+<meta property="og:site_name" content="Edcomplish">
 <meta property="og:description" content="A full-semester high school entrepreneurship course, ready to teach on day one.">
 <meta name="robots" content="index, follow">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -50,6 +51,9 @@ section{padding:72px 0;border-top:1px solid var(--line)}
 .top{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 0;flex-wrap:wrap}
 .mark{font-family:var(--display);font-weight:800;letter-spacing:.14em;font-size:15px;text-decoration:none}
 .mark span{color:var(--orange)}
+.mark .brand{color:inherit;font-weight:700;opacity:.8}
+.mark .sep{color:inherit;opacity:.35;font-weight:400;margin:0 10px}
+.hero p.byline{font-family:var(--display);font-weight:600;font-size:15px;letter-spacing:.06em;color:var(--band-ink);opacity:.85;margin-top:-14px}
 nav{display:flex;gap:22px;flex-wrap:wrap;font-size:15px}
 nav a{text-decoration:none;color:var(--band-muted)}
 nav a:hover{color:var(--band-ink)}
@@ -155,7 +159,7 @@ footer b{color:var(--band-ink);font-family:var(--display)}
 <div class="band">
   <div class="wrap">
     <header class="top">
-      <a class="mark" href="#top" id="top">VENTURE <span>LAB</span></a>
+      <a class="mark" href="#top" id="top" aria-label="Edcomplish, Venture Lab"><span class="brand">EDCOMPLISH</span><span class="sep" aria-hidden="true">|</span>VENTURE <span>LAB</span></a>
       <nav aria-label="Sections">
         <a href="#included">What's included</a>
         <a href="#venture-project">Venture Project</a>
@@ -167,6 +171,7 @@ footer b{color:var(--band-ink);font-family:var(--display)}
     <div class="hero">
       <div class="kicker">High school entrepreneurship, grades 9 to 12</div>
       <h1>From first idea to <em>Pitch Day</em> in 90 class periods.</h1>
+      <p class="byline">Venture Lab, an Edcomplish course</p>
       <p>Venture Lab is a full-semester course where student teams research, price, brand, fund and pitch a business of their own. You get every lesson, slide, worksheet, key and rubric, ready to teach on day one.</p>
       <div class="cta">
         <a class="btn btn-primary" href="#unit-1">Try Unit 1 free</a>
