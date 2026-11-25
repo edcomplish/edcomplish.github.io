@@ -9,6 +9,7 @@
 <meta property="og:site_name" content="Edcomplish">
 <meta property="og:description" content="A full-semester high school entrepreneurship course, ready to teach on day one.">
 <meta name="robots" content="index, follow">
+<link rel="icon" type="image/svg+xml" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 194 194"><mask id="mi" maskUnits="userSpaceOnUse"><rect x="-26" y="-26" width="332" height="332" fill="%23fff"/><circle cx="137" cy="137" r="33" fill="%23000"/></mask><g mask="url(%23mi)"><rect x="24" y="24" width="132" height="132" rx="30" fill="%231F3864"/><path fill="%23FFFFFF" d="M88.5 116.2Q78.5 116.2 71.1 112.4Q63.6 108.6 59.5 102Q55.4 95.4 55.4 87Q55.4 78.6 59.4 72Q63.4 65.4 70.5 61.7Q77.6 58 86.4 58Q94.7 58 101.6 61.4Q108.5 64.7 112.5 71.3Q116.6 77.8 116.6 87.2Q116.6 88.2 116.5 89.6Q116.4 90.9 116.3 92.1H71.6V81.7H105.8L98.3 84.6Q98.4 80.8 96.9 77.9Q95.4 75.1 92.7 73.6Q90.1 72 86.5 72Q83 72 80.3 73.6Q77.7 75.1 76.2 78Q74.8 80.9 74.8 84.7V87.7Q74.8 91.9 76.5 94.9Q78.2 97.9 81.4 99.5Q84.6 101.1 89.1 101.1Q93.3 101.1 96.2 99.9Q99.2 98.7 102.1 96.3L112.5 107.1Q108.5 111.5 102.5 113.9Q96.6 116.2 88.5 116.2Z"/></g><circle cx="137" cy="137" r="28" fill="%23F28C28"/><path d="M3 9.5 L9.5 15.5 L21.5 2.5" transform="translate(122 126) scale(1.2)" fill="none" stroke="%23FFFFFF" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round"/></svg>'>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
@@ -51,6 +52,16 @@ section{padding:72px 0;border-top:1px solid var(--line)}
 .top{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 0;flex-wrap:wrap}
 .mark{font-family:var(--display);font-weight:800;letter-spacing:.14em;font-size:15px;text-decoration:none}
 .mark span{color:var(--orange)}
+.edc-brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--band-ink)}
+.logo-mark{width:38px;height:38px;display:block;flex:none}
+.logo-word{font-family:var(--display);font-weight:800;font-size:24px;letter-spacing:-.02em;line-height:1;color:#FFFFFF}
+.logo-word .ed{color:var(--orange)}
+.edc-sep{width:1px;height:26px;background:rgba(255,255,255,.3);margin:0 4px}
+.edc-brand .mark{font-size:13px}
+.foot-brand{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.foot-brand .logo-mark{width:28px;height:28px}
+.foot-brand .logo-word{font-size:19px}
+@media (max-width:640px){.edc-sep,.edc-brand .mark{display:none}}
 .mark .brand{color:inherit;font-weight:700;opacity:.8}
 .mark .sep{color:inherit;opacity:.35;font-weight:400;margin:0 10px}
 .hero p.byline{font-family:var(--display);font-weight:600;font-size:15px;letter-spacing:.06em;color:var(--band-ink);opacity:.85;margin-top:-14px}
@@ -159,7 +170,7 @@ footer b{color:var(--band-ink);font-family:var(--display)}
 <div class="band">
   <div class="wrap">
     <header class="top">
-      <a class="mark" href="#top" id="top" aria-label="Edcomplish, Venture Lab"><span class="brand">EDCOMPLISH</span><span class="sep" aria-hidden="true">|</span>VENTURE <span>LAB</span></a>
+      <a class="edc-brand" href="#top" id="top" aria-label="Edcomplish: Venture Lab, back to top"><svg class="logo-mark" viewBox="24 24 146 146" aria-hidden="true" focusable="false"><g id="edc-mark"><mask id="lmh" maskUnits="userSpaceOnUse"><rect x="0" y="0" width="200" height="200" fill="#fff"/><circle cx="137" cy="137" r="33" fill="#000"/></mask><g mask="url(#lmh)"><rect x="24" y="24" width="132" height="132" rx="30" fill="#FFFFFF"/><path fill="#1F3864" d="M88.5 116.2Q78.5 116.2 71.1 112.4Q63.6 108.6 59.5 102Q55.4 95.4 55.4 87Q55.4 78.6 59.4 72Q63.4 65.4 70.5 61.7Q77.6 58 86.4 58Q94.7 58 101.6 61.4Q108.5 64.7 112.5 71.3Q116.6 77.8 116.6 87.2Q116.6 88.2 116.5 89.6Q116.4 90.9 116.3 92.1H71.6V81.7H105.8L98.3 84.6Q98.4 80.8 96.9 77.9Q95.4 75.1 92.7 73.6Q90.1 72 86.5 72Q83 72 80.3 73.6Q77.7 75.1 76.2 78Q74.8 80.9 74.8 84.7V87.7Q74.8 91.9 76.5 94.9Q78.2 97.9 81.4 99.5Q84.6 101.1 89.1 101.1Q93.3 101.1 96.2 99.9Q99.2 98.7 102.1 96.3L112.5 107.1Q108.5 111.5 102.5 113.9Q96.6 116.2 88.5 116.2Z"/></g><circle cx="137" cy="137" r="28" fill="#F28C28"/><path d="M3 9.5 L9.5 15.5 L21.5 2.5" transform="translate(122 126) scale(1.2)" fill="none" stroke="#fff" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round"/></g></svg><span class="logo-word"><span class="ed">ed</span>complish</span><span class="edc-sep" aria-hidden="true"></span><span class="mark">VENTURE <span>LAB</span></span></a>
       <nav aria-label="Sections">
         <a href="#included">What's included</a>
         <a href="#venture-project">Venture Project</a>
@@ -299,7 +310,7 @@ footer b{color:var(--band-ink);font-family:var(--display)}
 
 <footer>
   <div class="wrap row">
-    <div><b>Edcomplish</b> &nbsp;|&nbsp; <a href="mailto:info@edcomplish.com" style="color:inherit">info@edcomplish.com</a> &nbsp;|&nbsp; edcomplish.com</div>
+    <div class="foot-brand"><svg class="logo-mark" viewBox="24 24 146 146" aria-hidden="true" focusable="false"><use href="#edc-mark"/></svg><span class="logo-word"><span class="ed">ed</span>complish</span><span>&nbsp;<a href="mailto:info@edcomplish.com" style="color:inherit">info@edcomplish.com</a> &nbsp;|&nbsp; edcomplish.com</span></div>
     <div>Built by a small-business founder with a master's degree in teaching. &copy; 2026 Edcomplish LLC</div>
   </div>
 </footer>
